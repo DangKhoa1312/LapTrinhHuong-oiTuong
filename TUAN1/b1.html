@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><!--Thẻ góc bao bọc toàn bộ nội dung web-->
+    <head><!--Phần đầu của tài liệu HTML chứa thông tin về tài liệu như tiêu đề, liên kết đến các tài nguyên (CSS, JavaScript), và metadata.-->
+        <title>Example Cafe Menu</title> <!--Thẻ con của <head>, xác định tiêu đề của trang web hiển thị trên tab trình duyệt.-->
+        <meta charset="utf-8"><!--Thẻ này dùng để hỗ trợ Tiếng Việt-->
+    </head> 
+
+    <body><!--Chứa nội dung chính của trang web như văn bản, hình ảnh, liên kết, v.v.-->
+        <h1> Example Cafe Menu</h1><!--Tiêu đề-->
+
+        <p><!--Đoạn văn-->
+            <a href="#starters">Starters</a><!--Thẻ liên kết, dùng để tạo liên kết đến các trang khác hoặc địa chỉ URL bên ngoài. Thuộc tính href xác định đích đến của liên kết.-->
+            <a href="#main-courses">Main-courses</a>
+            <a href="#desserts">Desserts</a>
+        </p>
+
+        <h2 id = "starters">Starters</h2>
+        <ul>
+            <li>Chestnut and Mushroom Goujons(V)</li>
+            <li>Goat Cheese Salad</li>
+            <li>Honey Soy Chicken Kebabs</li>
+            <li>Seafood Salad</li>
+        </ul>
+        <p>
+            <a href="#top">Back to top</a>
+        </p>
+
+        <h2 id = "main-courses">Main-courses</h2>
+        <ul>
+            <li>Spinach and Ricotta Roulade</li>
+            <li>Beef Tournados with Mustard and Dill Sauce</li>
+            <li>Roast Chicken Salad</li>
+            <li>Icelandic Cod with Parsley Sauce</li>
+            <li>Mushroom Wellington</li>
+        </ul>
+        <p>
+            <a href="#top">Back to top</a>
+        </p>
+
+        <h2 id = "desserts">Desserts</h2>
+        <ul>
+            <li>Lemon Sorbet</li>
+            <li>Chocolate Mud Pie</li>
+            <li>Pecan Pie</li>
+            <li>Selection of Fine Cheeses from Around the World</li>
+        </ul>
+        <p>
+            <a href="#top">Back to top</a>
+        </p>
+
+        <p>Items marked with a (<a href="#">v</a>) are suitable for vegetarians.</p>
+
+    </body>
+</html>
+<!--CÁC THẺ QUAN TRỌNG
+1. Thẻ HTML quan trọng:
+    <html>: Thẻ gốc của tài liệu HTML, bao bọc toàn bộ nội dung trang web.
+    <head>: Phần đầu của tài liệu HTML chứa thông tin về tài liệu như tiêu đề, liên kết đến các tài nguyên (CSS, JavaScript), và metadata.
+    <title>: Thẻ con của <head>, xác định tiêu đề của trang web hiển thị trên tab trình duyệt.
+    <body>: Chứa nội dung chính của trang web như văn bản, hình ảnh, liên kết, v.v.
+    <h1> đến <h6>: Các thẻ tiêu đề, <h1> là tiêu đề quan trọng nhất và <h6> là tiêu đề ít quan trọng nhất. Dùng để cấu trúc nội dung trang.
+    <p>: Thẻ đoạn văn, dùng để bao quanh một đoạn văn bản.
+    <a>: Thẻ liên kết, dùng để tạo liên kết đến các trang khác hoặc địa chỉ URL bên ngoài. Thuộc tính href xác định đích đến của liên kết.
+    <img>: Thẻ hình ảnh, dùng để chèn hình ảnh vào trang. Thuộc tính src xác định đường dẫn tới hình ảnh và alt cung cấp văn bản thay thế cho hình ảnh.
+    <ul>, <ol>, <li>: Các thẻ danh sách. <ul> tạo danh sách không có thứ tự (bullet points), <ol> tạo danh sách có thứ tự (đánh số), và <li> là thẻ phần tử danh sách.
+    <div>: Thẻ dùng để tạo khối chứa chung, có thể được sử dụng để nhóm các phần tử lại với nhau và áp dụng CSS.
+    <span>: Thẻ nội tuyến dùng để áp dụng style hoặc tương tác JavaScript cho một phần tử nhỏ hơn như văn bản trong đoạn.
+    <form>: Thẻ biểu mẫu, dùng để thu thập dữ liệu đầu vào từ người dùng. Thường đi kèm với các thẻ như <input>, <textarea>, <button>, v.v.
+    <input>: Thẻ đầu vào, dùng để tạo các phần tử nhập liệu như trường văn bản, checkbox, radio button, v.v.
+    <button>: Thẻ nút, dùng để tạo nút có thể nhấn, thường được dùng trong biểu mẫu.
+    <table>, <tr>, <td>, <th>: Các thẻ bảng. <table> tạo bảng, <tr> tạo hàng, <td> tạo ô, và <th> tạo tiêu đề cột.
+2. Các thuộc tính CSS phổ biến:
+    color: Thiết lập màu sắc của văn bản.
+    background-color: Thiết lập màu nền cho một phần tử.
+    font-size: Xác định kích thước phông chữ của văn bản.
+    font-family: Xác định kiểu phông chữ của văn bản.
+    margin: Thiết lập khoảng cách ngoài (cách phần tử khác).
+    padding: Thiết lập khoảng cách trong (giữa nội dung và viền của phần tử).
+    border: Thiết lập viền cho phần tử, có thể xác định độ dày, kiểu và màu sắc.
+    width và height: Thiết lập chiều rộng và chiều cao của phần tử.
+    display: Xác định cách một phần tử được hiển thị (ví dụ: block, inline, flex, grid, v.v.).
+    position: Xác định cách một phần tử được định vị (ví dụ: static, relative, absolute, fixed, sticky).
+    text-align: Xác định căn lề của văn bản (ví dụ: left, right, center, justify).
+    overflow: Xác định cách xử lý nội dung vượt quá kích thước khung (ví dụ: hidden, scroll, auto).
+    z-index: Xác định thứ tự xếp chồng của các phần tử khi chúng chồng lên nhau.-->

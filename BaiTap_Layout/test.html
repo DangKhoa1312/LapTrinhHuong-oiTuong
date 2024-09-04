@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai_test</title>
+    <style>
+        body{
+            margin:100px ;
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace ;
+        }
+        .layout {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav section"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 10px;
+        }
+        header, nav, section, article, footer{
+            border: 1px solid #ffffff;
+            padding: 10px;
+            background-color: bisque;
+        }
+        header {
+            grid-area: header;
+            background-color: #35422c;
+            text-align: center;
+            color: white;
+        }
+        nav{
+            text-align: center;
+            width: 100px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <h2>Nav</h2>
+        </nav>
+    </div>
+</body>
+</html>

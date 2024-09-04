@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #784c10;
+        }
+        header {
+            background-color: #784c10;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        nav1{
+            background-color: #784c10;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        footer {
+            background-color: #784c10;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 2fr 1fr; 
+            height: calc(100vh - 100px); 
+        }
+        nav {
+            background-color: #784c10;
+            padding: 20px;
+            border: 1px solid #000;
+            height: 500%;
+        }
+        section {
+            background-color: #784c10;
+            padding: 20px;
+            border: 1px solid #000;
+            height: 500%;
+        }
+        aside {
+            background-color: #784c10;
+            padding: 20px;
+            border: 1px solid #000;
+            height: 500%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav1>
+        <h2>Nav</h2>
+    </nav1>
+    <div class="container">
+        <nav>
+            <h2>Nav</h2>
+        </nav>
+        <section>
+            <h2>Section</h2>
+        </section>
+        <aside>
+            <h2>Aside</h2>
+        </aside>
+    </div>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>

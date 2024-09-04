@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav section"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 10px;
+        }
+        header, footer, nav, section {
+            padding: 20px;
+            border: 1px solid #ffffff;
+        }
+        header {
+            grid-area: header;
+            background-color: #35422c;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #1e4d8b;
+            color: white;
+        }
+        section {
+            grid-area: section;
+            background-color: #8b4513;
+            color: white;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #35422c;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <h2>Navigation</h2>
+        </nav>
+        <section>
+            <h2>Section</h2>
+            <p>Article </p>
+        </section>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div>
+</body>
+</html>
